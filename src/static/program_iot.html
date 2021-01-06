@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>getsetfortech - program your future</title>
+    <title>getsetfortech - Linking Academia and Industry</title>
 
     <!-- Website icon -->
     <link rel="icon" type="image/png" href="http://placehold.it/20x20">
@@ -24,7 +24,7 @@
 
     <!-- Social media (frontend only) -->
     <meta property="og:site_name" content="GetSetForTech" />
-    <meta property="og:title" content="Program your future" />
+    <meta property="og:title" content="Linking Academia and Industry" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="" />
     <meta property="og:url" content="http://getsetfortech.com" />
@@ -34,10 +34,11 @@
 
 <body>
 
-    <main class="container-fluid">
+    <main class="container">
         <!-- START OF HEADER -->
         <div class="row">
-            <div class="col-12 col-sm-1 logo d-xs-block d-sm-block d-md-none">
+            <!-- Start for small screens -->
+            <div class="col-12 col-sm-12 col-md-12 col-lg-1 col-xl-1 logo d-xs-block d-sm-block d-md-block d-lg-none">
                 <div class="row h-100">
                     <div class="col vertical-margin-auto p-5">
                         <div>
@@ -48,9 +49,11 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-sm-1 logo d-none d-md-block">
+            <!-- End for small screens -->
+            <!-- Start for md and larger screens -->
+            <div class="col-12 col-sm-12 col-md-12 col-lg-1 col-xl-1 logo d-none d-lg-block">
                 <div class="row h-100">
-                    <div class="col vertical-margin-auto p-5">
+                    <div class="col vertical-margin-auto">
                         <div>
                             <a href="../../index.html">
                                 <img src="../static/images/GetSetForTech_logo.png" alt="getsetfortech logo">
@@ -59,12 +62,13 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-sm-2 menu">
+            <!-- End for md and larger screens -->
+            <div class="col-12 col-sm-12 col-md-12 col-lg-2 col-xl-2 menu">
                 <div class="row h-100">
                     <div class="col vertical-margin-auto p-3">
                         <ul class="page-list-small list-unstyled">
                             <li><a href="programs.html" class="current-page">Programs</a></li>
-                            <li><a href="faqs.html">FAQs</a></li>
+                            <!--<li><a href="faqs.html">FAQs</a></li>-->
                             <li><a href="partner.html">Partner</a></li>
                             <li><a href="contact.html">Contact</a></li>
                             <li><a href="about.html">About</a></li>
@@ -72,7 +76,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-sm-8 iot-icon d-xs-block d-sm-block d-md-none">
+            <!-- Start for small screens -->
+            <div class="col-12 col-sm-12 col-lg-8 col-xl-8 iot-icon d-xs-block d-sm-block d-md-block d-lg-none">
                 <div class="row h-75 p-4">
                     <div class="col text-center">
                         <img src="../static/images/IoT_96px_height.png" alt="Be an IoT Developer." height="32" />
@@ -80,7 +85,9 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-sm-8 iot-icon  d-none d-md-block">
+            <!-- End for small screens -->
+            <!-- Start for medium & large screens -->
+            <div class="col-12 col-sm-8 iot-icon d-none d-lg-block">
                 <div class="row h-75 pl-2">
                     <div class="col vertical-margin-auto">
                         <img src="../static/images/IoT_96px_height.png" alt="Be an IoT Developer.">
@@ -92,10 +99,12 @@
                     </div>
                 </div>
             </div>
+            <!-- End for medium & large screens -->
 
-            <div class="col-12 col-sm-1">
-                <div class="row cloud-icon" style="height: 33.3%;">
-                    <div class="col vertical-margin-auto p-5">
+            <!-- PROGRAM MENU: Start for medium & large screens -->
+            <div class="col-12 col-sm-12 col-lg-1 col-xl-1 d-none d-lg-block">
+                <div class="row cloud-icon">
+                    <div class="col vertical-margin-auto p-4">
                         <div>
                             <a href="program_cloud.html">
                                 <img src="../static/images/cloud_96px_height.png" height="32"
@@ -104,8 +113,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="row iot-icon" style="height: 33.3%;">
-                    <div class="col vertical-margin-auto p-5">
+                <div class="row iot-icon">
+                    <div class="col vertical-margin-auto p-4">
                         <div>
                             <a href="program_iot.html">
                                 <img src="../static/images/iot_96px_height.png" height="32"
@@ -114,8 +123,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="row data-science-icon" style="height: 33.3%;">
-                    <div class="col vertical-margin-auto p-5">
+                <div class="row data-science-icon">
+                    <div class="col vertical-margin-auto p-4">
                         <div>
                             <a href="program_data_science.html">
                                 <img src="../static/images/datascience_96px_height.png" height="32"
@@ -125,6 +134,37 @@
                     </div>
                 </div>
             </div>
+            <!-- PROGRAM MENU: End for medium & large screens -->
+            <!-- PROGRAM MENU: Start for small screens -->
+            <div class="col-12 col-sm-12 d-xs-block d-sm-block d-md-block d-lg-none">
+                <div class="row cloud-icon">
+                    <div class="col vertical-margin-auto p-3 cloud-icon">
+                        <div class="ml-5">
+                            <a href="program_cloud.html">
+                                <img src="../static/images/cloud_96px_height.png" height="32"
+                                    alt="Cloud Developer Program button" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col vertical-margin-auto p-3 iot-icon">
+                        <div class="ml-5">
+                            <a href="program_iot.html">
+                                <img src="../static/images/iot_96px_height.png" height="32"
+                                    alt="IoT Developer Program button" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col vertical-margin-auto p-3 data-science-icon">
+                        <div class="ml-5">
+                            <a href="program_data_science.html">
+                                <img src="../static/images/datascience_96px_height.png" height="32"
+                                    alt="Data Scientist Program button">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- PROGRAM MENU: End for small screens -->
         </div>
         <!-- END OF HEADER -->
 
@@ -169,13 +209,13 @@
                 </div>
             </div>
             <div class="col-12 col-sm-9 content-area">
-                <div class="block">Cloud Developers are software engineers with a specialization in cloud computing.
-                    That means on top of development experience, Cloud Developers must have a solid understanding of
-                    cloud systems — not only how they operate, but how to deploy them securely, efficiently, and with
-                    little-to-no downtime.</div>
+                <div class="block">An IoT Developer or Engineer is a professional with a broad umbrella of skills, who
+                    brings to play multiple disciplines and skillsets. IoT Developers are professionals who can develop,
+                    manage, and monitor IoT devices and systems by combining three core components – data, technology,
+                    and research.</div>
 
-                <div class="block">Our Cloud Developer Mentorship Stream takes you through the ropes, from the
-                    fundamentals to advanced applications.</div>
+                <div class="block">Our IoT Developer Mentorship Stream equips you will all the tools to make hardware,
+                    software and platforms work intelligently.</div>
 
                 <div class="block">
                     <table class="table">
@@ -210,16 +250,21 @@
                     </table>
                 </div>
 
-                <div class="block">Write to <a href="mailto:enquire@ananytech.com">enquire@ananytech.com</a> for
+                <div class="block">Write to <a href="mailto:enquiry@getsetfor.tech">enquiry@getsetfor.tech</a> for
                     details.</div>
 
             </div>
         </div>
+
+        <div class="row">
+            <footer class="col-12 col-sm-12 text-center copyright">
+                <small>Copyright 2020-21 Anany Technologies Pvt. Ltd.
+        </div>
+        </footer>
+        </div>
     </main>
 
-    <footer class="text-center copyright p-3">
-        <small>Copyright 2020-21 Anany Technologies Pvt. Ltd.</div>
-    </footer>
+
     <!-- JavaScript includes -->
     <script src="../js/app.js"></script>
 </body>
